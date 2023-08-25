@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: url(https://i.imgur.com/GbE0hrL.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+footer {
+    margin-top: 250px;
+}
+
+.my-info h4 {
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.my-info h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.my-info h1, .my-info h4 {
+    text-shadow: rgb(3, 2, 2) -3px 1px 13px;
+    color: #fff;
+}
+
+.navbar.navbar-default {
+    background-color: rgba(110,110,110, 0);
+    /*background-color: transparent;*/
+    border-color: transparent;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-brand {
+    color: #1abc9c;
+    text-shadow: 0px 0px 6px rgba(0, 47, 79, 1);
+    transition: all ease .5s;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar .container .navbar-brand {
+    background-color: transparent;
+    color: #1abc9c;
+    transition: all ease .5s;
+}
+
+.navbar-default .navbar-nav > .active {
+    border-bottom: 3px solid #1abc9c;
+}
+
+.navbar-header .navbar-toggle {
+    border: 2px solid #1abc9c;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+    background: #1abc9c;
+}
+
+.my-info {
+    margin-top: 180px;
+    margin-bottom: 110px;
+}
+.arrow-main {
+    position: relative;
+    height: 100%;
+}
+
+.arrow-wrap {
+    position: relative;
+}
+
+.ziplines,
+.basejumps {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  z-index:1;
+  background:#1abc9c;
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.5em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #1abc9c transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+@-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+
+.arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+}
+
+.navbar-shrink a {
+    margin: 0;
+    font-size: 0.9em;
+    text-shadow: none;
+    transition: all ease .5s;
+}
+
+body div.navbar.navbar-shrink {
+    background-color: rgba(110, 110, 110, 0.9);
+}
+
+#ziplines,
+#basejumps {
+    margin-top: 150px;
+}
+
+#ziplines h1,
+#basejumps h1 {
+    font-weight: 700;
+}
+
+#ziplines img,
+#basejumps img {
+    height: 200px;
+}
+
+#ziplines h4,
+#basejumps h4 {
+    font-style: italic;
+}
+
+#ziplines .col-lg-12,
+#basejumps .col-lg-12 {
+    padding-bottom: 15px;
+}
+
+#ziplines .portfolio-link,
+#basejumps .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9c;
+    transition: all ease .5s;
+    opacity: 0;
+}
+
+.portfolio-hover .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -21px;
+    margin-left: -21px;
+    color: #fff;
+}
+
+.portfolio-hover:hover {
+    opacity: 1;
+}
+
+#ziplines h4.fcc-name,
+#basejumps h4.fcc-name {
+    font-style: normal;
+    margin-top: 40px;
+}
+
+#ziplines .row,
+#basejumps .row {
+    margin-top: 40px;
+}
+
+.in-development .portfolio-hover {
+    background-color: rgba(0,0,0, .75);
+    opacity: 1;
+}
+
+.in-development:hover {
+    cursor: default;
+}
+
+footer {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #2f2f2f;
+}
+
+button.circular {
+    background-color: #2f2f2f;
+    border: 2px solid #96979e;
+    border-radius: 10em;
+    width: 50px;
+    height: 50px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.social a {
+    color: #96979e;
+}
+
+.social button:focus {
+    outline: none;
+}
+
+.social a:hover {
+    color: #1abc9c;
+}
+
+.social a:hover button {
+    border-color: #1abc9c;
+    transition: all ease .5s;
+}
+
+.copyright a {
+    color: #96979e;
+    line-height: 4em;
+}
+
+.copyright a:hover {
+    color: #1abc9c;
+    transition: all ease .5s;
+}
