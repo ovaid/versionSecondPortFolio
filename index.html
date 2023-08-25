@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My PortFolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./logoImages/file-person.svg">
+    
+</head>
+<style>
+    /* #absolute{
+      position: absolute;
+       left: 30%;
+       right: 30%;
+       top: 20%;
+       bottom: 50%;
+       border: none;
+       border-radius: 20px;
+       opacity: .7;
+       background-color: black;
+       color: whitesmoke;
+       padding: 10px;
+
+    } */
+    #ul li{
+       padding: 3px;
+       margin: 4px;
+       border: none;
+       border-radius: 10px;
+       float: right;
+    }
+</style>
+
+<body  onload="alert(`This is the view of my Portfolio. you can go to diffent sections on clicking th yellow buttons and can contact me from the footer of the page....THANK YOU!`)">
+    <!-- navbar/tabs  -->
+ >
+
+ <nav class="navbar navbar-light bg-secondary" 
+ style="background-image:url(./images/neom-llB7NfKnS8A-unsplash.jpg);">
+<div class="container-fluid col-12">
+ <div class="nav-left d-flex " id="leftNav">
+     <img src="./logoImages/alexander-shatov-mr4JG4SYOF8-unsplash.jpg" alt="" id="imgTop">
+     <h1 id="nameTop" class="navbar-brand "
+     style="font-size: 35px; color: black;"><b>Hi, I am Rameez Raja</b></h1>
+ </div>
+ <div class="d-flex">
+     <div class="right-nav">
+         <a target="_blank" class="navbar-brand" href="./index.html"><button type="button"
+                 class="btn btn-outline-primary btn-warning">Home</button></a>
+         <a target="_blank" class="navbar-brand" href="./index.html"><button type="button"
+                 class="btn btn-outline-primary btn-warning">About</button></a>
+         <a target="_blank" class=" navbar-brand" href="./Skill.html"><button type="button"
+                 class="btn btn-outline-primary btn-warning">Skills</button></a>
+         <a target="_blank" class=" navbar-brand" href="./Project.html"><button type="button"
+                 class="btn btn-outline-primary btn-warning">Projects</button></a>
+         <a target="_blank" class=" navbar-brand" href="./Contact.html"><button type="button"
+                 class="btn btn-outline-primary btn-warning">Contacts</button></a>
+     </div>
+ </div>
+</nav>
+
+
+    <!-- section 2🙅 Body -->
+    <h1 style="text-align: center; background-color: green; color: black;"><b>AboutME</b></h1>
+    <div class="card bg-dark text-white" style="background-image: url(./images/jackson-sophat-_t-l5FFH8VA-unsplash.jpg);">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/true-agency-o4UhdLv5jbQ-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/maciej-sawicki-pVx6kKTJz9Y-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/daniel-leone-g30P1zcOzXo-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="card-img-overlay">
+            <h2 class="card-title" style=" float: inline-start; text-align: center; font-weight:600;width: 200px; height: 100; color: yellow; display: block;">
+                RAMEEZ RAJA</h2>
+            <p class="card-title">i have Completed my Graduation from Kurukshetra University in the field of Computer
+                Science and ENgineering with the 8.6 CGPA</p>
+            <p class="card-text">I am a Full Stack developer , enthuiastic to work. I have fast growing capability to
+                develop my skills </p>
+            <div class="text-center" style="background-color: black; padding: 20px; margin-top: 100px; opacity: 0.5; position: absolute; border:none; border-radius: 20px; margin-right: 300px ; margin-left: 300px;">
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, corporis labore. Assumenda rerum culpa
+                reprehenderit ducimus ab natus, neque quo libero vel aspernatur voluptatibus! Quasi laborum, fuga ex et
+                similique repellat impedit ullam perspiciatis sunt deserunt placeat assumenda obcaecati, molestias dolor
+                consectetur commodi iste exercitationem! Inventore officia debitis libero eaque delectus? Consectetur,
+                voluptatem sapiente saepe illum cupiditate blanditiis soluta accusantium. Nisi neque dolorem vitae fuga
+                laudantium, ab dignissimos ad aut blanditiis molestias aspernatur minus. Adipisci aliquam hic,
+                perspiciatis ex reprehenderit consequuntur commodi repudiandae, exercitationem eius nesciunt dolorem
+                quisquam dolores harum, mollitia iusto possimus ipsa? Voluptates ipsa similique nulla esse, quod nobis,
+                ratione dolorum in exercitationem sit placeat possimus, architecto itaque quaerat fugiat eligendi eos
+                est pariatur numquam veniam inventore distinctio aut impedit. Pariatur cum repudiandae possimus commodi
+                voluptate delectus impedit qui? Exercitationem harum omnis accusantium culpa qui error dolores! Sed
+                aspernatur.
+                 <b>For more</b><button type="button" class="btn btn-secondary"><a target="_blank" href="http://linkedin.com/in/rameeza0418">Clicke me</a></button>
+            </p>
+            </div>
+            
+            <div style="text-align: right; vertical-align: bottom; margin-top: 640px;">
+                <button
+                    style="background-color: tomato; margin: 10px; color: white; width: 120px; height: 60px; border-radius: 20px;"><a
+                        target="_blank" style="text-decoration: none; color: white; border-radius: 20px;"
+                        href="http://github.com/ovaid"><img src="./logoImages/github.svg" alt="">Github</a></button>
+                <button
+                    style="background-color: tomato; margin: 10px; margin: 10px; color: white; width: 120px; border-radius: 20px; height: 60px;">
+                    <a target="_blank" style="text-decoration: none; color: white;"
+                        href="http://facebook.com/in/ovaidmushtaq"><img src="./logoImages/facebook.svg"
+                            alt="">facebook</a></button>
+                <button
+                    style="background-color: tomato; margin: 10px; color: white; width: 120px; border-radius: 20px; height: 60px;"><a
+                        target="_blank" style="text-decoration: none; color: white"
+                        href="https://web.whatsapp.com/"><img src="./logoImages/whatsapp.svg" alt="">whatsapp
+                        me</a></button>
+                <!-- <button style="background-color: tomato; margin: 10px; color: white;  border-radius: 20px; height: 80px;"><a target="_blank" style="text-decoration: none; color: white" href="https://web.whatsapp.com/"><img src="./images/whatsapp.svg" alt="">whatsapp me</a></button> -->
+                <button
+                    style="background-color: tomato; margin: 10px; color: white;  border-radius: 20px; width: 120px; height: 60px;"><a
+                        target="_blank" style="text-decoration: none; color: white"
+                        href="ovaidmushtaq.ovi@gmail.com"><img src="./logoImages/envelope-at-fill.svg"
+                            alt="">mail</a></button>
+                <button
+                    style="background-color: tomato; margin: 10px; color: white; width: 120px;  border-radius: 20px; height: 60px;">
+                    
+                    <a target="_blank" style="text-decoration: none; color: white"
+                        href="https://workspace.google.com/intl/en_in/"><img src="./logoImages/file-person.svg"
+                            alt="">Download CV</a></button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="background-image: url(./images/jackson-sophat-_t-l5FFH8VA-unsplash.jpg);">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Connect with me:</p>
+                    <a href="http://github.com/ovaid" class="social-icons" target="_blank"><i class="fab fa-github"><img src="./logoImages/github.svg" alt="github"></i></a>
+                    <a href="http://twitter.com/ovaidmushtaq" class="social-icons" target="_blank"><i class="fab fa-twitter"></i><img src="./logoImages/twitter.svg" alt=""></a>
+                    <a href="http://linkedin.com/in/rameeza0418" class="social-icons" target="_blank"><i class="fab fa-linkedin"></i><img src="./logoImages/linkedin.svg" alt=""></a>
+                    <a href="http://gmail.com/ovaidmushtaq.ovi@gmail.com" class="social-icons" target="_blank"><i class="fab fa-linkedin"></i><img src="./logoImages/envelope-at-fill.svg" alt=""></a>
+                    <a href="http://instgram.com/in/ovaidmushtaq" class="social-icons" target="_blank"><i class="fab fa-linkedin"></i><img src="./logoImages/instagram.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="spinner-grow text-primary" role="status" style="margin-left: 42%; margin-top: 30px;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </footer>
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+      
+
+        // $(document).ready(function(){
+        //     onload = (function(){
+        //     "alert(`This is the view of my Portfolio. you can go to diffent sections on clicking th yellow buttons and can contact me from the footer of the page....THANK YOU!`)"
+        //     })
+        // });
+                
+    </script>
+</body>
+
+</html>

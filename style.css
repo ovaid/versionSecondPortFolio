@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0px;
+}
+/* .container-fluid{
+    align-items: center;
+    justify-content: right;
+    float: right;
+} */
+#imgTop{
+    
+    width: 200px;
+    height: 200px;
+    border: 2px solid yellow;
+    border-radius: 50%;
+
+}
+#leftNav{
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    
+
+}
+#leftNav h1{
+    vertical-align: center !important;
+    font-weight: 100px !important;
+    float: right;
+    margin-left: 200px;
+    margin: 100px;
+}
+#leftNav h1:hover{
+    width: 150px;
+    color: antiquewhite;
+    box-shadow: 20px 20px 20px 20px;
+    background-color: none;
+    background-color: white;
+
+    
+}
+#skill-div{
+    display: flex;
+    padding: 1px;
+    margin: 2px;
+
+    height: 400px;
+    justify-content: space-evenly;
+}
+#skill-div .card{
+    padding: 4px;
+    margin: 12px;
+    
+}
+.position-div{
+    background-color: black;
+    border: 1px solid yellow;
+    position:absolute;
+}
+.bttm-project{
+    float: right;
+   
+    color: black;
+    display: block;
+}
+#skill-div-another{
+    display: flex;
+    padding: 1px;
+    margin: 2px;
+    
+    height: 400px;
+    justify-content: space-evenly;
+}
+#skill-div-another .card{
+    padding: 4px;
+    margin: 12px;
+ 
+}
+.transition-heading{
+    color: #333;
+    position: relative; 
+    left: 0; 
+    transition: left 0.5s ease-in-out;
+}
+.transition-heading:hover{
+    color: #e74c3c; 
+    left : 100px;;
+    
+}
+#nameTop{
+
+   box-shadow: 10px 0 6px 0;
+}
+
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  /* @media screen and (max-width: 992px) {
+    .media {
+      width: 100%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .media {
+      width: 100%;
+    }
+  } */
